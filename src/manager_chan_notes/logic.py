@@ -1,5 +1,4 @@
-# Handles the core application logic: managing notes data,
-implementing forgetfulness and misspelling mechanics.
+# Handles the core application logic: managing notes data, implementing forgetfulness and misspelling mechanics.
 import json
 import random
 import os
