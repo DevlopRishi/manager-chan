@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "manager-chan-notes"
+version = "0.2.0" # Increment version
+authors = [
+    { name = "DevlopRishi", email = "your.email@example.com" }, # Add email if desired
+]
+description = "A slightly forgetful but capable TUI note-taking app, guided by Manager-chan."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX", # More specific if not fully OS independent
+    "Operating System :: MacOS",
+    "Operating System :: Unix",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Scheduling",
+    "Topic :: Utilities",
+    "Topic :: Text Processing :: Markup :: Markdown",
+    "Typing :: Typed", # Indicate type hints are used
+]
+keywords = ["tui", "notes", "todo", "task manager", "cli", "forgetful", "markdown", "terminal", "console"]
+
+# Runtime dependencies
+dependencies = [
+    "prompt_toolkit >= 3.0.0, < 4.0.0",
+    "rich >= 10.0.0, < 14.0.0", # Check latest compatible rich version if needed
+]
+
+[project.urls]
+Homepage = "https://github.com/DevlopRishi/manager-chan"
+Repository = "https://github.com/DevlopRishi/manager-chan"
+Issues = "https://github.com/DevlopRishi/manager-chan/issues"
+
+# Creates the 'manager-chan' command in the user's PATH
+[project.scripts]
+manager-chan = "manager_chan_notes.main:run_app"
+
+# Tells setuptools where to find the package source
+[tool.setuptools.packages.find]
+where = ["src"]
