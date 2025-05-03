@@ -1,0 +1,9 @@
+# requirements.txt
+# For development and reference. Use pyproject.toml for installation.
+prompt_toolkit>=3.0.0,<4.0.0
+rich>=10.0.0,<14.0.0
+
+# Optional dev tools:
+# build
+# twine
+# pytest
