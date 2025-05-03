@@ -1,5 +1,5 @@
 # Main entry point for the Manager-chan Notes application.
-Handles argument parsing and initializes the TUI.
+# Handles argument parsing and initializes the TUI.
 import argparse
 import sys
 import os
