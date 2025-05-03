@@ -1,0 +1,37 @@
+# Stores Manager-chan's ASCII art representations.
+from prompt_toolkit.formatted_text import HTML
+
+MANAGER_CHAN_ART = {
+    "idle": HTML(
+        '<style fg="magenta">       /\\_/\\</style>\n'
+        '<style fg="cyan">( o.o )</style>   Hi! I\'m <style fg="yellow">Manager-chan!</style>\n'
+        '<style fg="cyan"> > ^ < </style>    I\'ll *try* my best! Ehehe...\n' # Escaped < >
+        '<style fg="#d0d0d0">     /  |  \\</style>\n'
+        '<style fg="#d0d0d0">    /   |   \\</style>\n'
+        '<style fg="#d0d0d0">   (____|____)</style>'
+    ),
+    "thinking": HTML(
+        '<style fg="magenta">       /\\_/\\</style>\n'
+        '<style fg="cyan">( o.o )</style>   Hmmmm...\n'
+        '<style fg="cyan"> > ? < </style>    Where did I put that...?\n' # Escaped < >
+        '<style fg="#d0d0d0">     /  |  \\</style>\n'
+        '<style fg="#d0d0d0">    /   |   \\</style>\n'
+        '<style fg="#d0d0d0">   (____|____)</style>'
+    ),
+    "happy": HTML(
+        '<style fg="magenta">       /\\_/\\</style>\n'
+        '<style fg="cyan">( ^ . ^ )</style>   Yay! Task done!\n'
+        '<style fg="cyan"> > w < </style>    Good job!\n' # Escaped < >
+        '<style fg="#d0d0d0">     /  |  \\</style>\n'
+        '<style fg="#d0d0d0">    /   |   \\</style>\n'
+        '<style fg="#d0d0d0">   (____|____)</style>'
+    ),
+    "sad": HTML(
+        '<style fg="magenta">       /\\_/\\</style>\n'
+        '<style fg="cyan">( T _ T )</style>   Gomen! I forgot...\n'
+        '<style fg="cyan"> > _ < </style>    Or maybe I lost the file?!\n' # Escaped < >
+        '<style fg="#d0d0d0">     /  |  \\</style>\n'
+        '<style fg="#d0d0d0">    /   |   \\</style>\n'
+        '<style fg="#d0d0d0">   (____|____)</style>'
+    )
+}
