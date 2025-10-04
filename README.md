@@ -137,7 +137,7 @@ Contributions are welcome! If you find a bug, have a feature suggestion, or want
     *   Push to the branch (`git push origin feature/your-feature-name`).
     *   Open a Pull Request back to the `main` branch of `DevlopRishi/manager-chan`.
 
-Please try to maintain the existing coding style and add comments where necessary.
+Please try to maintain the existing coding style and add comments where necessary. 🙏
 
 ## 📜 License
 
